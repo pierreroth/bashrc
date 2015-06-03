@@ -1,1 +1,6 @@
+# git prompt displays current branch
 export PS1="${PS1::$((${#PS1}-3))}\$(__git_ps1 ' [\[\e[34;1m\]%s\[\e[0m\]]')\$ "
+
+# virtualenvwrapper configuration for python development 
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
